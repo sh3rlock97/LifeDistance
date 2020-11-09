@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		337E18852558897300C232B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337E18832558897300C232B9 /* Main.storyboard */; };
 		337E18872558897400C232B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337E18862558897400C232B9 /* Assets.xcassets */; };
 		337E188A2558897400C232B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337E18882558897400C232B9 /* LaunchScreen.storyboard */; };
+		337E189525588C4200C232B9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337E189425588C4200C232B9 /* HealthKit.framework */; };
+		337E189D25589E8100C232B9 /* SKCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E189C25589E8100C232B9 /* SKCollectionViewCell.swift */; };
+		337E18A42558A15300C232B9 /* ViewControllerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E18A32558A15300C232B9 /* ViewControllerDetail.swift */; };
+		E72DE81CF160809380079D5A /* Pods_LifeDistance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD03D061AA7D5DF21EDE360 /* Pods_LifeDistance.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,13 @@
 		337E18862558897400C232B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		337E18892558897400C232B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		337E188B2558897400C232B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		337E189225588C4200C232B9 /* LifeDistance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LifeDistance.entitlements; sourceTree = "<group>"; };
+		337E189425588C4200C232B9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		337E189C25589E8100C232B9 /* SKCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKCollectionViewCell.swift; sourceTree = "<group>"; };
+		337E18A32558A15300C232B9 /* ViewControllerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDetail.swift; sourceTree = "<group>"; };
+		3DC42B241968324C33C3AE75 /* Pods-LifeDistance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeDistance.release.xcconfig"; path = "Target Support Files/Pods-LifeDistance/Pods-LifeDistance.release.xcconfig"; sourceTree = "<group>"; };
+		86B5A6D4BEF8F9214ABE88C8 /* Pods-LifeDistance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeDistance.debug.xcconfig"; path = "Target Support Files/Pods-LifeDistance/Pods-LifeDistance.debug.xcconfig"; sourceTree = "<group>"; };
+		ADD03D061AA7D5DF21EDE360 /* Pods_LifeDistance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeDistance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				337E189525588C4200C232B9 /* HealthKit.framework in Frameworks */,
+				E72DE81CF160809380079D5A /* Pods_LifeDistance.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				337E187C2558897300C232B9 /* LifeDistance */,
 				337E187B2558897300C232B9 /* Products */,
+				337E189325588C4200C232B9 /* Frameworks */,
+				8D18536D1EFA2FD795B21B7B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +71,36 @@
 		337E187C2558897300C232B9 /* LifeDistance */ = {
 			isa = PBXGroup;
 			children = (
+				337E189225588C4200C232B9 /* LifeDistance.entitlements */,
 				337E187D2558897300C232B9 /* AppDelegate.swift */,
 				337E187F2558897300C232B9 /* SceneDelegate.swift */,
 				337E18812558897300C232B9 /* ViewController.swift */,
 				337E18832558897300C232B9 /* Main.storyboard */,
+				337E18A32558A15300C232B9 /* ViewControllerDetail.swift */,
+				337E189C25589E8100C232B9 /* SKCollectionViewCell.swift */,
 				337E18862558897400C232B9 /* Assets.xcassets */,
 				337E18882558897400C232B9 /* LaunchScreen.storyboard */,
 				337E188B2558897400C232B9 /* Info.plist */,
 			);
 			path = LifeDistance;
+			sourceTree = "<group>";
+		};
+		337E189325588C4200C232B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				337E189425588C4200C232B9 /* HealthKit.framework */,
+				ADD03D061AA7D5DF21EDE360 /* Pods_LifeDistance.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D18536D1EFA2FD795B21B7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86B5A6D4BEF8F9214ABE88C8 /* Pods-LifeDistance.debug.xcconfig */,
+				3DC42B241968324C33C3AE75 /* Pods-LifeDistance.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 337E188E2558897400C232B9 /* Build configuration list for PBXNativeTarget "LifeDistance" */;
 			buildPhases = (
+				E0B0CDF7168C29E477E01D60 /* [CP] Check Pods Manifest.lock */,
 				337E18762558897300C232B9 /* Sources */,
 				337E18772558897300C232B9 /* Frameworks */,
 				337E18782558897300C232B9 /* Resources */,
+				359E547A7D621BBD363590E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +170,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		359E547A7D621BBD363590E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LifeDistance/Pods-LifeDistance-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LifeDistance/Pods-LifeDistance-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LifeDistance/Pods-LifeDistance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0B0CDF7168C29E477E01D60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LifeDistance-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		337E18762558897300C232B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,7 +219,9 @@
 			files = (
 				337E18822558897300C232B9 /* ViewController.swift in Sources */,
 				337E187E2558897300C232B9 /* AppDelegate.swift in Sources */,
+				337E189D25589E8100C232B9 /* SKCollectionViewCell.swift in Sources */,
 				337E18802558897300C232B9 /* SceneDelegate.swift in Sources */,
+				337E18A42558A15300C232B9 /* ViewControllerDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,16 +365,20 @@
 		};
 		337E188F2558897400C232B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B5A6D4BEF8F9214ABE88C8 /* Pods-LifeDistance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LifeDistance/LifeDistance.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 7L9HE24692;
 				INFOPLIST_FILE = LifeDistance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ch.sh3rlock.LifeDistance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -302,16 +388,20 @@
 		};
 		337E18902558897400C232B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DC42B241968324C33C3AE75 /* Pods-LifeDistance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LifeDistance/LifeDistance.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 7L9HE24692;
 				INFOPLIST_FILE = LifeDistance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ch.sh3rlock.LifeDistance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
